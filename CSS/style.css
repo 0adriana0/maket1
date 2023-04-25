@@ -1,0 +1,173 @@
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.logo-link{
+    font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #212121;
+        text-decoration: none;
+}
+
+.web{
+    color: #2196F3;
+}
+
+.nav-list{
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav-list a:hover {
+    color: #2196F3;
+}
+
+.contact-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    list-style: none;
+}
+
+.contact-list a{
+    text-decoration: none;
+    color: #757575;
+}
+
+.contact-list a:hover {
+    color: #2196F3;
+}
+
+.hero {
+    background-color: #2F303A;;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    width: 216px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);/*тінь за кнопкою*/
+    border-radius: 4px;/*рамка*/
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1, 88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.features-subtitle {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+
+.features-paragraf {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.electricity-list {
+    list-style: none;
+}
+
+.electricity-img {
+    width: 370px;
+    height: 294px;
+}
+
+.people-list {
+    list-style: none;
+}
+
+.people-photo {
+    width: 270px;
+    height: 260px;
+}
+
+.people-name {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+.people-work {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.footer {
+    background-color: #2F303A;;
+}
+
+.footer-contact-list{
+    list-style: none;
+}
+
+.footer-contact-list a{
+    text-decoration: none;  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-parag{
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em; 
+        color: #FFFFFF;
+}
