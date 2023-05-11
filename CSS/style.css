@@ -9,33 +9,61 @@
     overflow: hidden;
 }
 
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
+}
+
+.contanier{
+    max-width: 1600px;
+}
+
+
+
+.navigation {
+    width: 350px;
+    display: flex;
 }
 
 .logo-link{
+    width: 145px;
+    height: 31px;
     font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-        color: #212121;
-        text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-decoration: none; 
+    margin: 24px 93px 25px 215px;
 }
 
 .web{
     color: #2196F3;
 }
 
+.nav-list-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+    margin: 32px 50px 32px 0px;
+}
+
 .nav-list{
+    display: flex;
     list-style: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
+
 
 .nav-list a {
     text-decoration: none;
@@ -47,11 +75,16 @@ body{
 }
 
 .contact-list {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     list-style: none;
+}
+
+.contact-list-cont{
+    margin: 32px 50px 32px 0px;
 }
 
 .contact-list a{
@@ -64,6 +97,7 @@ body{
 }
 
 .hero {
+    height: 600px;
     background-color: #2F303A;;
 }
 
@@ -78,6 +112,8 @@ body{
 }
 
 .hero-btn {
+    margin: 0 auto;    
+    display: block;
     width: 216px;
     height: 50px;
     background: #2196F3;
@@ -85,70 +121,115 @@ body{
     border-radius: 4px;/*рамка*/
     font-weight: 700;
     font-size: 16px;
-    line-height: 1, 88;
+    line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    
 }
 
 .features-list {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .features-subtitle {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
+    margin: 94px 30px 10px 0px;
 }
 
 .features-paragraf {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    margin: 0px 30px 0px 0px;
+}
+
+.electricity-parag{
+    text-align: center;
+    margin: 118px 0px 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
 }
 
 .electricity-list {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .electricity-img {
     width: 370px;
     height: 294px;
+    margin: 0px 30px 94px 0px;
+}
+
+.people{
+    background-color: #F5F4FA;
+    padding: 94px;
+}
+
+.people-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin: 0px 0px 50px;
+}
+
+.people-cards{
+    margin: 0px 30px 94px 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .people-list {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .people-photo {
+    background: #FFFFFF;
     width: 270px;
     height: 260px;
 }
 
 .people-name {
+    text-align: center;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
+    margin: 30px 0px 10px;
 }
 
 .people-work {
+    text-align: center;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     color: #757575;
+    margin: 0px 0px 30px;
 }
 
 .footer {
-    background-color: #2F303A;;
+    background-color: #2F303A;
+    height: 252px;
 }
 
 .footer-contact-list{
@@ -159,7 +240,7 @@ body{
     text-decoration: none;  
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -167,7 +248,7 @@ body{
 .footer-parag{
     font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1.71;
         letter-spacing: 0.03em; 
         color: #FFFFFF;
 }
@@ -176,7 +257,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: #ffffff;
     text-decoration: none;
