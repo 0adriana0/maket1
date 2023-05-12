@@ -20,13 +20,31 @@ body{
 
 .contanier{
     max-width: 1600px;
+    margin: 0 auto;
+
 }
 
-
-
-.navigation {
-    width: 350px;
+.nav-menu-left{
     display: flex;
+    width: 520px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu-right {
+    width: 307px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header-contanier{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid red;
 }
 
 .logo-link{
@@ -39,7 +57,7 @@ body{
     letter-spacing: 0.03em;
     color: #212121;
     text-decoration: none; 
-    margin: 24px 93px 25px 215px;
+
 }
 
 .web{
@@ -51,17 +69,18 @@ body{
     font-size: 14px;
     line-height: 1,14;
     letter-spacing: 0.02em;
-    margin: 32px 50px 32px 0px;
 }
 
 .nav-list{
     display: flex;
+    justify-content: space-between;
     list-style: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+    width: 281px;
 }
 
 
@@ -81,10 +100,6 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
     list-style: none;
-}
-
-.contact-list-cont{
-    margin: 32px 50px 32px 0px;
 }
 
 .contact-list a{
