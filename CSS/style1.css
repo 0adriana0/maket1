@@ -9,13 +9,35 @@ body {
 
 .contanier {
     max-width: 1600px;
+    margin: 0 auto;
+
 }
 
-
-
-.navigation {
-    width: 350px;
+.nav-menu-left {
     display: flex;
+    width: 520px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+}
+
+.nav-menu-right {
+    width: 307px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-contanier {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-link {
@@ -28,7 +50,8 @@ body {
     letter-spacing: 0.03em;
     color: #212121;
     text-decoration: none;
-    margin: 24px 93px 25px 215px;
+
+
 }
 
 .web {
@@ -40,17 +63,18 @@ body {
     font-size: 14px;
     line-height: 1, 14;
     letter-spacing: 0.02em;
-    margin: 32px 50px 32px 0px;
 }
 
 .nav-list {
     display: flex;
+    justify-content: space-between;
     list-style: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+    width: 281px;
 }
 
 
@@ -63,8 +87,10 @@ body {
     color: #2196F3;
 }
 
-.contact-list {
-    display: flex;
+
+.contact-link {
+    text-decoration: none;
+    color: #757575;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -72,17 +98,13 @@ body {
     list-style: none;
 }
 
-.contact-list-cont {
-    margin: 32px 50px 32px 0px;
-}
-
-.contact-list a {
-    text-decoration: none;
-    color: #757575;
-}
-
-.contact-list a:hover {
+.contact-link:hover,
+.contact-link:focus {
     color: #2196F3;
+}
+
+.main-section-bth{
+    margin: 94px 0px 34px;
 }
 
 .main-list-bth{
@@ -103,11 +125,10 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    margin: 126px 8px 50px 0px;
 }
 
-.main-button, button:hover{
-    color: #2196F3;
+.main-button-item:hover,.main-button-item:focus{
+    background-color: #2196F3;
 }
 
 .main-img {
@@ -136,41 +157,39 @@ body {
     margin: 0px 24px 20px;
 }
 
+.main-section-cards{
+    width: 1170px;
+    height: 1272px;
+}
+
 .list-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
     width: 370px;
     height: 404px;
     background: #FFFFFF;
     list-style: none;
-    display: flex;
 }
 
 .main-list-item{
-
     margin: 50px 30px 0px 0px;
     border: 1px solid #EEEEEE;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     background-color: #2F303A;
     height: 252px;
-    margin: 94px 0px 0px ;
+}
+
+.footer-contact {
+    padding: 60px 0px 60px 215px;
 }
 
 .footer-contact-list {
     list-style: none;
+    padding: 0;
 }
 
 .footer-contact-list a {
