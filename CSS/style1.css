@@ -1,4 +1,4 @@
-h2,p{
+h2,p,ul{
     margin: 0;
     padding: 0;
 }
@@ -104,7 +104,7 @@ body {
 }
 
 .main-section-bth{
-    margin: 94px 0px 34px;
+    margin: 94px 0px 50px;
 }
 
 .main-list-bth{
@@ -112,6 +112,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 
 .main-button-item{
     width: 125px;
@@ -125,10 +126,12 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    margin: 0px 8px 0px 0px ;
 }
 
 .main-button-item:hover,.main-button-item:focus{
     background-color: #2196F3;
+    color: #FFFFFF;
 }
 
 .main-img {
@@ -159,28 +162,29 @@ body {
 
 .main-section-cards{
     width: 1170px;
-    height: 1272px;
+    height: 1260px;
+    margin: o auto ;
+    padding: 0px 170px;
 }
 
 .list-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between ;
-    width: 370px;
-    height: 404px;
     background: #FFFFFF;
     list-style: none;
 }
 
 .main-list-item{
-    margin: 50px 30px 0px 0px;
     border: 1px solid #EEEEEE;
+    margin: 0px 0px 30px;
 }
 
 
 .footer {
     background-color: #2F303A;
-    height: 252px;
+    height: 222px;
+    margin: 90px 0px 0px 0px;
 }
 
 .footer-contact {
