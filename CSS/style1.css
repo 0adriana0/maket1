@@ -3,10 +3,9 @@ h2,p,ul{
     padding: 0;
 }
 
-ul{
+/* ul ul {
     list-style-type: none;
-
-}
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -27,6 +26,7 @@ body {
 }
 
 .nav-menu-right {
+    align-items: center;
     width: 333px;
     display: flex;
     justify-content: space-between;
@@ -55,8 +55,6 @@ body {
     letter-spacing: 0.03em;
     color: #212121;
     text-decoration: none;
-
-
 }
 
 .web {
@@ -236,13 +234,21 @@ body {
     fill:#2196F3;
 }
 
-.features-cart{
+/* .features-cart{
     width: 270px;
     height: 120px;
     border-radius: 4px;
     background-color: #F5F4FA;
-}
+} */
 
 .icons-list{
-    display: flex;
+    list-style-type: none;
+}
+
+.features-subtitle::before{
+    content: '';
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
 }
