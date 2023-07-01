@@ -3,6 +3,10 @@ h2,p,ul{
     padding: 0;
 }
 
+ul{
+    list-style: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -230,4 +234,11 @@ body {
 
 .contact-link:hover .icon-contact,.contact-link:focus .icon-contact{
     fill:#2196F3;
+}
+
+.features-cart{
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
 }
