@@ -1,17 +1,25 @@
 
-h1,h2,h3,p{
+h1,h2,h3,p,ul{
     margin: 0;
     padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+use{
+    display: block;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
 }
 
-.contanier{
-    max-width: 1600px;
-    margin: 0 auto;
 
+.contanier{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .nav-menu-left{
@@ -23,10 +31,21 @@ body{
 }
 
 .nav-menu-right {
-    width: 307px;
+    align-items: center;
+    width: 333px;
     display: flex;
     justify-content: space-between;
     padding: 0;
+}
+
+.icon-contact {
+    fill: #757575;
+    margin-right: 10px;
+}
+
+.contact-link:hover .icon-contact,
+.contact-link:focus .icon-contact {
+    fill: #2196F3;
 }
 
 .header-contanier{
@@ -145,7 +164,7 @@ body{
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 94px 30px 0px 0px;
+    margin: 94px 0px 0px 0px;
 }
 
 .features-subtitle {
@@ -167,8 +186,7 @@ body{
 }
 
 .electricity{
-    margin: 94px 0px;
-    height: 386px;
+    margin: 94px auto;
 }
 
 .electricity-parag{
@@ -183,13 +201,16 @@ body{
 .electricity-list {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .electricity-img {
     width: 370px;
     height: 294px;
-    margin: 0px 30px 94px 0px;
+}
+
+.electricity-img:nth-child(-n+2){
+    margin-right: 30px;
 }
 
 .people{
@@ -206,10 +227,13 @@ body{
 }
 
 .people-cards{
-    margin: 0px 30px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.people-cards:nth-child(-n+3){
+    margin-right: 30px;
 }
 
 .people-list {
@@ -234,6 +258,53 @@ body{
     margin: 30px 0px 10px;
 }
 
+.icons-list {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    margin: 16px auto 30px;
+    padding: 0px;
+}
+
+.features-list-item:nth-child(-n+3) {
+    margin: 0 30px 0 0;
+}
+
+.features-cart {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+
+.features-cart-icon {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.people-icons{
+    fill: #AFB1B8;
+}
+
+.icon-list-item:hover .people-icons{
+    fill: #FFFFFF;
+}
+
+.icon-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+
+.icon-list-item:hover, .icon-list-item:focus{
+    border-radius: 50%;
+    background-color: #2196F3;
+}
+
 .people-work {
     text-align: center;
     font-family: 'Roboto';
@@ -242,16 +313,21 @@ body{
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: #757575;
-    margin: 0px 0px 30px;
 }
 
 .footer {
+    padding: 60px 0;
     background-color: #2F303A;
     height: 252px;
 }
 
+.footer-content{
+    display: flex;
+}
+
 .footer-contact{
-    padding: 60px 0px 60px 215px;
+    padding-bottom: 60px;
+    margin-right: 70px;
 }
 
 .footer-contact-list{
@@ -269,11 +345,23 @@ body{
 }
 
 .footer-parag{
+    width: 231px;
+    height: 21px;
+    margin-top: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em; 
     color: #FFFFFF;
+}
+
+.footer-cont{
+    width: 231px;
+    height: 21px;
+}
+
+.footer-cont:first-child{
+    margin: 9px 0px;
 }
 
 .footer-logo-link {
@@ -284,4 +372,96 @@ body{
     letter-spacing: 0.03em;
     color: #ffffff;
     text-decoration: none;
+}
+
+
+.clients{
+    padding: 94px 0;
+}
+
+.clients-title{
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+}
+
+.clients-icon{
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+}
+
+.clients-list-item:hover .clients-icon{
+    fill: #2196F3;
+}
+
+.clients-list-item:hover{
+    border-color: #2196F3;
+}
+
+.footer-links{
+    padding: 12px 0 0;
+}
+
+.footer-title{
+    margin-bottom: 20px;
+    color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+}
+
+.footer-list-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list-item{
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-list-item:nth-child(-n+3){
+    margin-right: 10px;
+}
+
+.link-footer-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-list-item:hover, .footer-list-item:focus{
+    background-color: #2196F3;
+}
+
+.footer-svg{
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
 }
