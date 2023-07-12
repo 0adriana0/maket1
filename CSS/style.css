@@ -199,9 +199,8 @@ body{
 }
 
 .electricity-list {
-    list-style: none;
     display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .electricity-img {
@@ -209,7 +208,7 @@ body{
     height: 294px;
 }
 
-.electricity-img:nth-child(-n+2){
+.electricity-list-item:nth-child(-n+2){
     margin-right: 30px;
 }
 
