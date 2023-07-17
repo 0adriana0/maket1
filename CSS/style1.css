@@ -3,6 +3,10 @@ h2,p,ul{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -85,16 +89,25 @@ body {
     width: 281px;
 }
 
-
-.nav-list a {
-    text-decoration: none;
+.nav-list-link {
+    position: relative;
     color: #212121;
 }
 
-.nav-list a:hover {
-    color: #2196F3;
+.nav-list-link:hover::after {
+    content: "";
+    display: block;
+    background-color: #2196F3;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 45px;
 }
 
+.nav-list-link:hover {
+    color: #2196F3;
+}
 
 .contact-link {
     text-decoration: none;
@@ -145,8 +158,7 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.main-img {
-    margin: 0px 0px 20px;
+.thumb{
     width: 370px;
     height: 294px;
 }
@@ -157,7 +169,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
-    margin: 0px 24px 4px;
+    margin: 20px 24px 0;
 }
 
 .main-parag{
